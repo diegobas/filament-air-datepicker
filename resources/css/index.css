@@ -1,1 +1,45 @@
-@import '../../vendor/filament/filament/resources/css/theme.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/variants';
+
+@import 'air-datepicker/air-datepicker.css';
+
+.air-datepicker {
+    --adp-accent-color: theme('colors.primary.600');
+    --adp-accent-color-hover: theme('colors.primary.700');
+    --adp-background-color-in-range: rgba(233, 84, 32, 0.1);
+    --adp-background-color-in-range-focused: rgba(233, 84, 32, 0.2);
+    --adp-background-color-selected-other-month-focused: var(--adp-accent-color-hover);
+    --adp-background-color-selected-other-month: var(--adp-accent-color);
+    --adp-color-current-date: var(--adp-accent-color);
+    --adp-day-name-color: var(--adp-accent-color);
+    --adp-day-name-color-hover: var(--adp-accent-color-hover);
+    --adp-cell-background-color-selected: var(--adp-accent-color);
+    --adp-cell-background-color-selected-hover:var(--adp-accent-color-hover);
+    --adp-cell-background-color-in-range: rgba(233, 84, 32, 0.1);
+    --adp-cell-background-color-in-range-hover: rgba(233, 84, 32, 0.2);
+    --adp-cell-border-color-in-range: var(--adp-cell-background-color-selected);
+    --adp-btn-color: var(--adp-accent-color);
+    --adp-border-radius: 8px;
+    --adp-border-color-inline: theme('colors.gray.900 / 10%');
+}
+
+.air-datepicker.-inline- {
+    @apply border-0 shadow-sm ring-1 ring-gray-950/10;
+}
+.air-datepicker.-inline-.-only-timepicker-  .air-datepicker--time {
+    @apply border-t-0;
+}
+
+.air-datepicker-time--row {
+    @apply my-4 md:my-2;
+}
+
+.air-datepicker-time--row input[type="range"]::-webkit-slider-thumb {
+    @apply w-6 h-6 -mt-3 md:w-3 md:h-3 md:-mt-[0.35rem];
+}
+
+.air-datepicker-time--row input[type="range"]::-moz-range-thumb {
+    @apply w-6 h-6 -mt-3 md:w-3 md:h-3 md:-mt-[0.35rem];
+}
