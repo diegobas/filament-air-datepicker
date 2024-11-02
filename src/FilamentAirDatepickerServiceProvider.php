@@ -2,6 +2,8 @@
 
 namespace DiegoBas\FilamentAirDatepicker;
 
+use DiegoBas\FilamentAirDatepicker\Commands\FilamentAirDatepickerCommand;
+use DiegoBas\FilamentAirDatepicker\Testing\TestsFilamentAirDatepicker;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
@@ -13,8 +15,6 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use DiegoBas\FilamentAirDatepicker\Commands\FilamentAirDatepickerCommand;
-use DiegoBas\FilamentAirDatepicker\Testing\TestsFilamentAirDatepicker;
 
 class FilamentAirDatepickerServiceProvider extends PackageServiceProvider
 {
